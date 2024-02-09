@@ -13,14 +13,19 @@
   list-style: none;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
 }
 *:focus {
   outline: none;
+}
+*:focus::placeholder {
+  color: transparent;
 }
 body .container {
   background-color: #f1f5f9;
   min-height: 100vh;
 }
+/* start slide bar */
 body aside {
   width: 250px;
   box-shadow: 0 0 10px #ddd;
@@ -46,7 +51,7 @@ body aside h2::after {
   border-radius: 50%;
   border: white 4px solid;
   top: 31px;
-  left: 100px;
+  left: 45%;
 }
 aside ul li a {
   transition: 0.3s;
@@ -73,6 +78,7 @@ aside ul li a.active {
     margin-bottom: 15px !important;
   }
 }
+/* end slide bar */
 /* Start Box */
 .d-flex {
   display: flex;
